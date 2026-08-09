@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Track Claim | ReClaim</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/status.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">↩</span>
+
+            <span>ReClaim</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="browse.html">
+                Browse Items
+            </a>
+
+            <a href="report-lost.html">
+                Report Lost
+            </a>
+
+            <a href="report-found.html">
+                Report Found
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- HEADER -->
+
+    <section class="status-header">
+
+        <span class="section-label">
+            CLAIM TRACKER
+        </span>
+
+
+        <h1>
+
+            Track your
+            <span>ReClaim.</span>
+
+        </h1>
+
+
+        <p>
+
+            Enter your claim ID to check the current status of your ownership verification.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- SEARCH -->
+
+    <main class="status-container">
+
+        <div class="status-search">
+
+            <label for="claimId">
+                Claim ID
+            </label>
+
+
+            <div class="status-input-row">
+
+                <input type="text" id="claimId" placeholder="Example: CL-123456">
+
+
+                <button type="button" id="trackButton" class="btn primary">
+
+                    Track Claim
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RESULT -->
+
+        <div id="statusResult" class="status-result">
+
+        </div>
+
+
+        <!-- DEFAULT INFO -->
+
+        <div id="statusInfo" class="status-info">
+
+            <div class="info-icon">
+                🔐
+            </div>
+
+            <h2>
+                Your claim information stays private.
+            </h2>
+
+            <p>
+                ReClaim only displays the status of your verification. Private item details and contact information are never exposed here.
+            </p>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <span class="logo-icon">
+                ↩
+            </span>
+
+            <strong>
+                ReClaim
+            </strong>
+
+        </div>
+
+
+        <p>
+            Find it. Verify it. Reclaim it.
+        </p>
+
+
+        <p class="copyright">
+            © 2026 ReClaim. Built for Hack Devengers 1.0.
+        </p>
+
+    </footer>
+
+
+    <script src="js/status.js"></script>
+
+</body>
+
+</html>

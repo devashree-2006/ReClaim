@@ -1,0 +1,256 @@
+/* ========================================
+   RECLAIM - CLAIM STATUS
+======================================== */
+
+.status-header {
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    padding: 65px 7% 35px;
+}
+
+.status-header h1 {
+    font-size: 45px;
+    line-height: 1.1;
+    margin: 12px 0 18px;
+}
+
+.status-header h1 span {
+    color: var(--primary);
+}
+
+.status-header p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.status-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 20px 80px;
+}
+
+
+/* ========================================
+   SEARCH
+======================================== */
+
+.status-search {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.status-search label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.status-input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.status-input-row input {
+    flex: 1;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+}
+
+.status-input-row input:focus {
+    border-color: var(--primary);
+}
+
+
+/* ========================================
+   RESULT
+======================================== */
+
+.status-result {
+    display: none;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 20px;
+}
+
+.status-result.visible {
+    display: block;
+}
+
+.status-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.status-result h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.status-result>p {
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   CLAIM DETAILS
+======================================== */
+
+.claim-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.claim-detail {
+    background: #f7f9f7;
+    padding: 13px;
+    border-radius: 8px;
+}
+
+.claim-detail span {
+    display: block;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.claim-detail strong {
+    font-size: 11px;
+}
+
+
+/* ========================================
+   PROGRESS
+======================================== */
+
+.progress {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.progress-step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.progress-step::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background: #e3e8e3;
+    z-index: 0;
+}
+
+.progress-step:last-child::after {
+    display: none;
+}
+
+.progress-circle {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    border-radius: 50%;
+    background: #e8ede8;
+    display: grid;
+    place-items: center;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.progress-step.active .progress-circle {
+    background: var(--primary);
+    color: white;
+}
+
+.progress-step span {
+    display: block;
+    font-size: 8px;
+    margin-top: 7px;
+    color: var(--text);
+}
+
+
+/* ========================================
+   INFO
+======================================== */
+
+.status-info {
+    text-align: center;
+    padding: 30px 20px;
+    background: #f7f9f7;
+    border-radius: 14px;
+}
+
+.info-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.status-info h2 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.status-info p {
+    max-width: 500px;
+    margin: auto;
+    color: var(--text);
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+    .status-header {
+        padding: 50px 5% 30px;
+    }
+    .status-header h1 {
+        font-size: 35px;
+    }
+    .status-input-row {
+        flex-direction: column;
+    }
+    .status-input-row .btn {
+        width: 100%;
+    }
+    .claim-details {
+        grid-template-columns: 1fr;
+    }
+    .progress-step span {
+        font-size: 7px;
+    }
+}

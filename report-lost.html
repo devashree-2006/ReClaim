@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Lost Item | ReClaim</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/report.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">↩</span>
+            <span>ReClaim</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse Items</a>
+            <a href="report-lost.html" class="active">Report Lost</a>
+            <a href="report-found.html">Report Found</a>
+        </nav>
+
+        <a href="browse.html" class="nav-btn">
+            Find an Item
+        </a>
+
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="form-header">
+
+        <span class="section-label">
+            LOST SOMETHING?
+        </span>
+
+        <h1>
+            Tell us what you <span>lost.</span>
+        </h1>
+
+        <p>
+            Give us enough information to help identify your item. Sensitive details will remain private and may be used later to verify ownership.
+        </p>
+
+    </section>
+
+
+    <!-- Form -->
+    <main class="form-container">
+
+        <form id="lostItemForm">
+
+
+            <!-- PUBLIC INFORMATION -->
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <div class="form-icon">
+                        📋
+                    </div>
+
+                    <div>
+                        <h2>Item Information</h2>
+
+                        <p>
+                            Basic details that can help identify your item.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="itemName">
+                            Item Name *
+                        </label>
+
+                        <input type="text" id="itemName" placeholder="e.g. Black wallet" required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="category">
+                            Category *
+                        </label>
+
+                        <select id="category" required>
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option value="electronics">
+                                Electronics
+                            </option>
+
+                            <option value="wallet">
+                                Wallet / Money
+                            </option>
+
+                            <option value="id">
+                                ID / Documents
+                            </option>
+
+                            <option value="bag">
+                                Bag
+                            </option>
+
+                            <option value="clothing">
+                                Clothing
+                            </option>
+
+                            <option value="jewellery">
+                                Jewellery
+                            </option>
+
+                            <option value="stationery">
+                                Books / Stationery
+                            </option>
+
+                            <option value="keys">
+                                Keys
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="color">
+                            Primary Color *
+                        </label>
+
+                        <input type="text" id="color" placeholder="e.g. Black" required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="lostDate">
+                            Date Lost *
+                        </label>
+
+                        <input type="date" id="lostDate" required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="lostLocation">
+                            Location *
+                        </label>
+
+                        <input type="text" id="lostLocation" placeholder="e.g. College Library" required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="lostTime">
+                            Approximate Time
+                        </label>
+
+                        <input type="time" id="lostTime">
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="description">
+                        Public Description *
+                    </label>
+
+                    <textarea id="description" rows="4" placeholder="Describe the item's visible appearance. Avoid sensitive information." required></textarea>
+
+                    <small>
+                        ⚠️ Don't include passwords, card numbers, ID numbers
+                        or other highly sensitive information here.
+                    </small>
+
+                </div>
+
+            </section>
+
+
+            <!-- PRIVATE INFORMATION -->
+            <section class="form-section private-section">
+
+                <div class="private-heading">
+
+                    <div class="form-icon private-icon">
+                        🔐
+                    </div>
+
+                    <div>
+
+                        <h2>Private Verification Details</h2>
+
+                        <p>
+                            These details will <strong>NOT</strong> be shown publicly.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="privacy-notice">
+
+                    <span>🔒</span>
+
+                    <p>
+                        Only the verification system and authorised users will use these details to check ownership.
+                    </p>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="uniqueDetail">
+                        Unique Detail *
+                    </label>
+
+                    <textarea id="uniqueDetail" rows="3" placeholder="Example: Small scratch near the zipper" required></textarea>
+
+                    <small>
+                        Something distinctive that only the real owner
+                        would reasonably know.
+                    </small>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="hiddenDetail">
+                        Another Identifying Detail *
+                    </label>
+
+                    <textarea id="hiddenDetail" rows="3" placeholder="Example: A small sticker inside the wallet" required></textarea>
+
+                    <small>
+                        Avoid entering passwords, PINs, full card numbers
+                        or other extremely sensitive information.
+                    </small>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="itemContents">
+                        What was with/in the item?
+                    </label>
+
+                    <textarea id="itemContents" rows="3" placeholder="Example: College ID and ₹500"></textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT -->
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <div class="form-icon">
+                        📞
+                    </div>
+
+                    <div>
+
+                        <h2>Contact Information</h2>
+
+                        <p>
+                            Used only to contact you about a potential match.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Your Name *
+                        </label>
+
+                        <input type="text" id="name" placeholder="Enter your name" required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email *
+                        </label>
+
+                        <input type="email" id="email" placeholder="you@example.com" required>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Submit -->
+            <div class="form-actions">
+
+                <a href="index.html" class="cancel-btn">
+                    Cancel
+                </a>
+
+                <button type="submit" class="btn primary submit-btn">
+                    Submit Lost Item →
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            <span class="logo-icon">↩</span>
+            <strong>ReClaim</strong>
+        </div>
+
+        <p>
+            Find it. Verify it. Reclaim it.
+        </p>
+
+        <p class="copyright">
+            © 2026 ReClaim. Built for Hack Devengers 1.0.
+        </p>
+
+    </footer>
+
+
+    <script src="js/reports.js"></script>
+
+</body>
+
+</html>

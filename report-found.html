@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Report Found Item | ReClaim</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/report.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">↩</span>
+
+            <span>ReClaim</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="browse.html">
+                Browse Items
+            </a>
+
+            <a href="report-lost.html">
+                Report Lost
+            </a>
+
+            <a href="report-found.html" class="active">
+                Report Found
+            </a>
+
+        </nav>
+
+
+        <a href="browse.html" class="nav-btn">
+
+            Find an Item
+
+        </a>
+
+    </header>
+
+
+
+    <!-- Page Header -->
+
+    <section class="form-header">
+
+        <span class="section-label">
+            FOUND SOMETHING?
+        </span>
+
+
+        <h1>
+
+            Help it find its
+            <span>owner.</span>
+
+        </h1>
+
+
+        <p>
+
+            Share the major details of the item. Sensitive identifying information will remain private and will be used to verify ownership.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- Form -->
+
+    <main class="form-container">
+
+
+        <form id="foundItemForm">
+
+
+            <!-- PUBLIC INFORMATION -->
+
+            <section class="form-section">
+
+
+                <div class="form-section-heading">
+
+                    <div class="form-icon">
+                        📦
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            Public Item Information
+                        </h2>
+
+                        <p>
+                            These details may be shown to people searching for their belongings.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-grid">
+
+
+                    <div class="input-group">
+
+                        <label for="foundItemName">
+
+                            Item Name *
+
+                        </label>
+
+
+                        <input type="text" id="foundItemName" placeholder="e.g. Black wallet" required>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label for="foundCategory">
+
+                            Category *
+
+                        </label>
+
+
+                        <select id="foundCategory" required>
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option value="electronics">
+                                Electronics
+                            </option>
+
+                            <option value="wallet">
+                                Wallet / Money
+                            </option>
+
+                            <option value="id">
+                                ID / Documents
+                            </option>
+
+                            <option value="bag">
+                                Bag
+                            </option>
+
+                            <option value="clothing">
+                                Clothing
+                            </option>
+
+                            <option value="jewellery">
+                                Jewellery
+                            </option>
+
+                            <option value="stationery">
+                                Books / Stationery
+                            </option>
+
+                            <option value="keys">
+                                Keys
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label for="foundColor">
+
+                            Primary Color *
+
+                        </label>
+
+
+                        <input type="text" id="foundColor" placeholder="e.g. Black" required>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label for="foundDate">
+
+                            Date Found *
+
+                        </label>
+
+
+                        <input type="date" id="foundDate" required>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label for="foundLocation">
+
+                            Found Location *
+
+                        </label>
+
+
+                        <input type="text" id="foundLocation" placeholder="e.g. College Library" required>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+                        <label for="foundTime">
+
+                            Approximate Time
+
+                        </label>
+
+
+                        <input type="time" id="foundTime">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+                    <label for="foundDescription">
+
+                        Public Description *
+
+                    </label>
+
+
+                    <textarea id="foundDescription" rows="4" placeholder="Describe only visible features of the item." required></textarea>
+
+
+                    <small>
+
+                        ⚠️ Do not reveal hidden contents,
+                        identification numbers or other
+                        sensitive details.
+
+                    </small>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- PRIVATE INFORMATION -->
+
+            <section class="form-section private-section">
+
+
+                <div class="private-heading">
+
+
+                    <div class="form-icon private-icon">
+
+                        🔐
+
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+
+                            Private Verification Details
+
+                        </h2>
+
+
+                        <p>
+
+                            These details will
+                            <strong>NOT</strong> be shown publicly.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="privacy-notice">
+
+                    <span>
+                        🔒
+                    </span>
+
+
+                    <p>
+
+                        Keep these details hidden. They will later be used to ask ownership questions to someone claiming the item.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+
+                    <label for="foundUniqueDetail">
+
+                        Hidden Identifying Detail *
+
+                    </label>
+
+
+                    <textarea id="foundUniqueDetail" rows="3" placeholder="Example: Small scratch near the zipper" required></textarea>
+
+
+                    <small>
+
+                        A detail that the genuine owner
+                        should reasonably know.
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+
+                    <label for="foundHiddenDetail">
+
+                        Another Hidden Detail *
+
+                    </label>
+
+
+                    <textarea id="foundHiddenDetail" rows="3" placeholder="Example: Blue sticker inside" required></textarea>
+
+
+                    <small>
+
+                        Do not reveal this information
+                        in the public description.
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="input-group">
+
+
+                    <label for="foundContents">
+
+                        Hidden Contents / Identifiers
+
+                    </label>
+
+
+                    <textarea id="foundContents" rows="3" placeholder="Example: College ID and ₹500"></textarea>
+
+
+                    <small>
+
+                        Optional. Do not enter passwords,
+                        PINs or complete card numbers.
+
+                    </small>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- FINDER CONTACT -->
+
+            <section class="form-section">
+
+
+                <div class="form-section-heading">
+
+
+                    <div class="form-icon">
+                        📞
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            Your Information
+                        </h2>
+
+
+                        <p>
+
+                            Used to contact you when someone successfully claims the item.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-grid">
+
+
+                    <div class="input-group">
+
+
+                        <label for="finderName">
+
+                            Your Name *
+
+                        </label>
+
+
+                        <input type="text" id="finderName" placeholder="Enter your name" required>
+
+                    </div>
+
+
+
+                    <div class="input-group">
+
+
+                        <label for="finderEmail">
+
+                            Email *
+
+                        </label>
+
+
+                        <input type="email" id="finderEmail" placeholder="you@example.com" required>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="form-actions">
+
+
+                <a href="index.html" class="cancel-btn">
+
+                    Cancel
+
+                </a>
+
+
+                <button type="submit" class="btn primary submit-btn">
+
+                    Submit Found Item →
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            <span class="logo-icon">
+                ↩
+            </span>
+
+            <strong>
+                ReClaim
+            </strong>
+
+        </div>
+
+
+        <p>
+            Find it. Verify it. Reclaim it.
+        </p>
+
+
+        <p class="copyright">
+
+            © 2026 ReClaim. Built for Hack Devengers 1.0.
+
+        </p>
+
+
+    </footer>
+
+
+
+    <script src="js/reports.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verify Ownership | ReClaim</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/claim.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">↩</span>
+
+            <span>ReClaim</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="browse.html" class="active">
+
+                Browse Items
+
+            </a>
+
+            <a href="report-lost.html">
+                Report Lost
+            </a>
+
+            <a href="report-found.html">
+                Report Found
+            </a>
+
+        </nav>
+
+
+        <a href="browse.html" class="nav-btn">
+
+            Browse Items
+
+        </a>
+
+    </header>
+
+
+
+    <!-- HEADER -->
+
+    <section class="claim-header">
+
+        <span class="section-label">
+            OWNERSHIP VERIFICATION
+        </span>
+
+
+        <h1>
+
+            Think it's yours?
+            <span>Prove it.</span>
+
+        </h1>
+
+
+        <p>
+
+            We won't reveal the private details of the item. Answer the questions based on what you remember to help us verify your ownership.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- MAIN -->
+
+    <main class="claim-container">
+
+
+        <!-- ITEM SUMMARY -->
+
+        <div id="claimItem" class="claim-item">
+
+            <!-- JavaScript loads item -->
+
+        </div>
+
+
+
+        <!-- VERIFICATION FORM -->
+
+        <form id="claimForm" class="claim-form">
+
+
+            <div class="verification-heading">
+
+                <div class="verification-icon">
+                    🔐
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        Verify your ownership
+                    </h2>
+
+                    <p>
+                        Your answers are kept private.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- QUESTION 1 -->
+
+            <div class="question-card">
+
+                <label for="answer1">
+
+                    1. What unique identifying detail
+                    does this item have?
+
+                </label>
+
+
+                <textarea id="answer1" rows="3" placeholder="Describe the detail you remember..." required></textarea>
+
+            </div>
+
+
+
+            <!-- QUESTION 2 -->
+
+            <div class="question-card">
+
+                <label for="answer2">
+
+                    2. What hidden detail or marking
+                    does the item have?
+
+                </label>
+
+
+                <textarea id="answer2" rows="3" placeholder="Describe another detail..." required></textarea>
+
+            </div>
+
+
+
+            <!-- QUESTION 3 -->
+
+            <div class="question-card">
+
+                <label for="answer3">
+
+                    3. What contents or identifiers
+                    were associated with the item?
+
+                </label>
+
+
+                <textarea id="answer3" rows="3" placeholder="Mention what you remember..." required></textarea>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="claim-contact">
+
+                <h3>
+                    Your Contact Information
+                </h3>
+
+                <p>
+                    If your answers match, the finder can be contacted to arrange a safe return.
+                </p>
+
+
+                <div class="claim-grid">
+
+
+                    <div class="input-group">
+
+                        <label for="claimerName">
+                            Your Name *
+                        </label>
+
+                        <input type="text" id="claimerName" required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="claimerEmail">
+                            Email *
+                        </label>
+
+                        <input type="email" id="claimerEmail" required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="claim-actions">
+
+                <a href="browse.html" class="cancel-btn">
+
+                    ← Back to Items
+
+                </a>
+
+
+                <button type="submit" class="btn primary">
+
+                    Submit Verification →
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+
+        <!-- RESULT -->
+
+        <div id="claimResult" class="claim-result">
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <span class="logo-icon">
+                ↩
+            </span>
+
+            <strong>
+                ReClaim
+            </strong>
+
+        </div>
+
+
+        <p>
+            Find it. Verify it. Reclaim it.
+        </p>
+
+
+        <p class="copyright">
+
+            © 2026 ReClaim. Built for Hack Devengers 1.0.
+
+        </p>
+
+    </footer>
+
+
+
+    <script src="js/claim.js"></script>
+
+</body>
+
+</html>
